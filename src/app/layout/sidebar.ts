@@ -1,8 +1,8 @@
 import { Component, Input, HostListener } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
 import { BoardService } from '../services/board.service';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-sidebar',
@@ -126,12 +126,7 @@ import { BoardService } from '../services/board.service';
             />
 
             <div class="flex justify-between items-center px-8 py-2 ">
-              <button
-                (click)="saveBoard()"
-                class="text-sm bg-green-600 text-white  px-4 py-2 rounded hover:bg-green-700 ml-auto"
-              >
-                Save
-              </button>
+              <button (click)="saveBoard()">Save</button>
               <button
                 (click)="cancelCreate()"
                 class="bg-gray-400 text-sm  text-white px-4 py-2 rounded hover:bg-gray-700 ml-auto"
